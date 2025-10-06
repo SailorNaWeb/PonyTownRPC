@@ -1,0 +1,19 @@
+{
+  "name": "PonyTown RPC",
+  "description": "A Discord Rich Presence extension for Pony Town",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "icon.png"
+  },
+
+  "content_scripts": [
+    {
+	"js" : ["scripts/content.js"],
+	"matches" : [
+	    "https://pony.town"
+	]
+    }
+  ]
+}
